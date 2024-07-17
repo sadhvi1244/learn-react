@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Card from "./Components/Card";
 
-function App() {
+function App(props) {
   const [count, setCount] = useState(0);
 
   let myobj = {
@@ -17,8 +17,8 @@ function App() {
       <h1 className="bg-blue-600 p-5 text-black rounded-xl m-5">
         Tailwind test
       </h1>
-      <Card channel="Chaiaurcodr" someObj={myobj} /> <br />
-      <Card channel="heeehee" someArr={myArr} />
+      <Card username="Chaiaurcodr" btnText="click me" /> <br />
+      <Card username="heeehee" />
     </>
   );
 }
