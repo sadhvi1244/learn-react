@@ -1,7 +1,11 @@
 import React from "react";
 
-function Card(props) {
-  console.log("props", props);
+function Card({ username, btnText = "visit me" }) {
+  //by default agr user vaha btnText na likha to by default //by default agr user vaha btnText na likha to by default visit me show kre
+
+  //destructuring
+  console.log(username);
+  //   console.log("props", props);
   return (
     <div className="w-[300px] rounded-md border">
       <img
@@ -11,7 +15,7 @@ function Card(props) {
       />
       <div className="p-4">
         <h1 className="inline-flex items-center text-lg font-semibold">
-          About Macbook  {" "}
+          {username} {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -47,7 +51,7 @@ function Card(props) {
           type="button"
           className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
-          Read
+          {btnText}
         </button>
       </div>
     </div>
