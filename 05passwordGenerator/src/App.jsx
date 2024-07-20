@@ -16,6 +16,7 @@ function App() {
   }, [Password]);
 
   //syntax of useCallback hooks: const cachedFn = useCallback(fn, dependencies)
+  //useCallback memorise the function (ya to pura memorise kr leta hai ya to kuch part(thread) jo reuse ho paai)
   const PasswordGenerator = useCallback(() => {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -34,7 +35,7 @@ function App() {
   }, [length, numberAllowed, charAllowed, setPassword]);
 
   //useEffect hooks
-
+  //jab page load hota hai to first time kaam aata hai
   useEffect(() => {
     PasswordGenerator();
   }, [length, numberAllowed, charAllowed, PasswordGenerator]);
@@ -62,7 +63,7 @@ function App() {
           </button>
         </div>
         <div className="flex text-sm gap-x-2">
-          <div className="flex items-center gap-x-1 ">
+          <div className="flex items-center gap-x-1  ">
             <input
               type="range"
               min={6}
