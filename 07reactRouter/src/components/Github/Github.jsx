@@ -19,15 +19,16 @@ function Github() {
         Github followers: {data.followers}
       </div>
       <img
-        className="p-8 "
+        className="p-8 size-60 mx-auto drop-shadow-2xl rounded-full "
         src={data.avatar_url}
         alt="Git picture"
         width={300}
       />
+
       <h1 className="text-center text-2xl font-serif">
         Hi 👋, I'm Sadhvi Kesarwani
       </h1>
-      <p className="justify-center text-center m-8">
+      <p className="justify-center text-center m-6 text-lg font-serif">
         A passionate and driven to-be software engineer with expertise in Java
         programming, and Front-End web developer from India.
       </p>
