@@ -25,8 +25,8 @@ function App() {
           <button
             className="outline-none bg-yellow-300 px-4 py-1 rounded-full"
             onClick={() => setColor("yellow")}
-          >
-            Yellow
+          >Yellow
+            
           </button>
           <button
             className="outline-none bg-green-400 px-4 py-1 rounded-full"
